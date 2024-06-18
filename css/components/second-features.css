@@ -1,0 +1,110 @@
+.line_block_img {
+    background-image: url(../../img/main/to-right-square.png);
+    height: 120%;
+    width: 35%;
+    margin-left: 45%;
+    position: absolute;
+    margin-bottom: 5%;
+}
+
+.wrapper-3 {
+    height: 150vh;
+    justify-content: center;
+}
+
+.man_block_img {
+    background-image: url(../../img/main/man.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 60%;
+    margin-left: 10%;
+    position: absolute;
+    margin-bottom: 5%;
+}
+
+.second_features {
+    position: relative;
+    display: grid;
+    margin-top: 25%;
+    margin-left: 50%;
+    height: 35%;
+    grid-template-columns: repeat(2, 25%);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.second_features__item {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.second_features__item__img {
+    width: 84px;
+    height: 84px;
+    margin-bottom: 20px;
+}
+
+.second_features__item__subtitle {
+    text-transform: uppercase;
+    font-family: "Roboto Condensed";
+    font-size: 24px;
+}
+
+@media (max-width: 1300px) {
+    .second_features {
+        grid-template-columns: repeat(2, 35%);
+        margin-top: 40%;
+        margin-left: 30%;
+    }
+
+    .second_features__item__subtitle {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 920px) {
+    .second_features {
+        grid-template-columns: repeat(2, 40%);
+        margin-top: 60%;
+    }
+
+    .second_features__item__subtitle {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 680px) {
+    .second_features {
+        margin-top: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .second_features {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50%;
+        width: 80%;
+        height: 70%;
+    }
+
+    .wrapper-3 {
+        justify-content: flex-start;
+    }
+
+    .man_block_img {
+        height: 30%;
+        margin-top: 10%;
+    }
+
+    .line_block_img {
+        margin-top: 5%;
+    }
+}

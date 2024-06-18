@@ -1,0 +1,75 @@
+.it_solutions, .second_it_solutions {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    font-family: "Roboto";
+}
+
+.second_it_solutions {
+    grid-template-columns: 70% 30%;
+}
+
+.it_solutions__main, .second_it_solutions__main {
+    display: grid;
+    height: 80%;
+    grid-template-rows: 1fr 4fr 50px;
+}
+
+.second_it_solutions__main {
+    justify-items: flex-end;
+    text-align: right;
+}
+
+.it_solutions__main__title {
+    color: var(--btn-color);
+    font-size: 3.333vw;
+    margin-bottom: 30px;
+}
+
+.it_solutions__main__subtitle {
+    font-size: 1.458vw;
+    line-height: 2.604vw;
+}
+
+.btn {
+    width: 70%;
+    font-size: 1.25vw;
+}
+
+.it_solutions__img {
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+@media (max-width: 940px) {
+    .it_solutions, .second_it_solutions {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 100%;
+    }
+
+    .it_solutions__main, .second_it_solutions__main {
+        height: 70%;
+        text-align: center;
+        justify-items: center;
+        grid-template-rows: repeat(2, 1fr) 50px;
+        padding-bottom: 50px;
+    }
+
+    .it_solutions__main__title {
+        font-size: 6.809vw;
+    }
+
+    .it_solutions__main__subtitle {
+        font-size: 2.128vw;
+        line-height: 30px;
+    }
+
+    .it_solutions .btn, .second_it_solutions .btn {
+        width: 40%;
+        height: 30px;
+        align-self: flex-end;
+        font-size: .5rem;
+    }
+}

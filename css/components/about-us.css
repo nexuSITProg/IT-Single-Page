@@ -1,0 +1,95 @@
+.about_us {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-family: "Roboto";
+}
+
+.about_us__header {
+    padding: 20px;
+}
+
+.about_us__header__title {
+    font-size: 45px;
+    font-weight: 400;
+    width: 90%;
+}
+
+.about_us__header hr {
+    width: 20%;
+    border: 0;
+    background-color: var(--btn-color);
+    margin-top: 20px;
+    height: 5px;
+}
+
+.about_us__main {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr) 70px;
+    padding: 20px;
+}
+
+.about_us__main__subtitle {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.grey {
+    color: gray;
+}
+
+.about_us__main .btn {
+    height: 50px;
+    width: 50%;
+    align-self: flex-end;
+}
+
+@media (max-width: 1480px) {
+    .about_us {
+        width: 85%;
+    }
+}
+
+@media (max-width: 960px) {
+    .about_us {
+        grid-template-rows: 1fr 2fr;
+        grid-template-columns: 100%;
+    }
+
+    .about_us__main {
+        height: auto;
+        grid-template-rows: repeat(2, 30%) 80px;
+    }
+
+    .about_us__main .btn {
+        margin: 0;
+    }
+
+    .about_us__main__subtitle {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about_us__main {
+        height: auto;
+        grid-template-rows: repeat(2, 1fr) 80px;
+    }
+
+    .about_us__header {
+        align-self: flex-end;
+    }
+
+    .about_us__header__title {
+        font-size: 30px;
+    }
+
+    .about_us__main__subtitle {
+        font-size: 15px;
+    }
+
+    .about_us__main .btn {
+        justify-self: center;
+    }
+}
